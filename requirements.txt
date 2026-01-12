@@ -1,0 +1,8 @@
+numpy 
+pandas 
+nltk 
+evaluate 
+rouge-score
+datasets
+torch
+transformers
