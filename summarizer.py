@@ -45,7 +45,7 @@ try:
     summarizer = pipeline("summarization", model="facebook/bart-large-cnn", device=-1)
 
     print("Generating summaries via AI model...")
-    model_outputs = summarizer(sample_texts, max_length=100, min_length=30, do_sample=False)
+    model_outputs = summarizer(sample_texts, max_length=100, min_length=30, do_sample=False, truncation=True)
     generated_list = [out['summary_text'] for out in model_outputs]
 
     # --- 5. Scoring ---
